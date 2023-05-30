@@ -18,6 +18,7 @@ section{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    transform: scale(1.5);
 
 }
 .min,.hour,.sec,.dot{
@@ -29,6 +30,8 @@ section{
     transform: rotate(-90deg);
     transform-origin: left;
     background-color: #000;
+    border-radius: 50%;
+
 
 }
 .hour{
@@ -42,6 +45,7 @@ section{
 .sec{
     height: 2px;
     width: 20%;
+    /* background-color: red; */
 }
 .dot{
     height: 10px;
