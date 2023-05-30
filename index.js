@@ -6,7 +6,7 @@ setInterval(() => {
     console.log(time.getHours());
     const secDeg =time.getSeconds()/60 *360 -90;
     const minDeg =time.getMinutes()/60 *360 -90;
-    const hourDeg =time.getHours()/12 *360 -90;
+    const hourDeg =(time.getHours()/12)*360 -72;
     const sec_ans="rotate("+secDeg+"deg)";
     const min_ans="rotate("+minDeg+"deg)";
     const hour_ans="rotate("+hourDeg+"deg)";
@@ -14,5 +14,6 @@ setInterval(() => {
     sec1.style.transform=sec_ans;
     hour.style.transform=hour_ans;
     min.style.transform=min_ans;
+    console.log(time.getMinutes());
     
 }, 1000);
